@@ -20,8 +20,16 @@ if (opcion == 1) {
     int cantidad = sc.nextInt();
     double acumulado = 0;
     for (int i = 1; <= cantidad; i++ )  {
-        System.out.println
-
+        System.out.print("Monto de la factuura " + i + ": ");
+        double Monto = sc.nextDouble();
+        acumulado += Monto;
+        System.out.println(">> Corte de caja completado. Ingreso total del día:$" + acumulado);
+        else if (opcion == 2) {
+            System.out.print("Ingrese el precio bruto del componente: ");
+            double precioBruto = sc=nextDouble();
+            
+        }
+        
     }
     
 }
