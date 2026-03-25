@@ -27,6 +27,8 @@ if (opcion == 1) {
         else if (opcion == 2) {
             System.out.print("Ingrese el precio bruto del componente: ");
             double precioBruto = sc=nextDouble();
+            double resultadoNeto = calcularNeto(precioBruto);
+            System.out.println(">> Precio neto procesado con 16% de IVA: $" + resultadoNeto);
             
         }
         
