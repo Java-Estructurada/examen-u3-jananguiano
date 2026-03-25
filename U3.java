@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.scanner;
 public class U3;
 public static double
 calcularNeto (double bruto) {
@@ -29,7 +28,22 @@ if (opcion == 1) {
             double precioBruto = sc=nextDouble();
             double resultadoNeto = calcularNeto(precioBruto);
             System.out.println(">> Precio neto procesado con 16% de IVA: $" + resultadoNeto);
+            else if (opcion ==3){
+                boolean confirmacion = false;
+                System.out.print("¿Confirmar cierre de turno? (1: Si / 0: No)");
+                int check = sc.nextInt();
+                while (check == 1 && ! confirmacion) {
+                    System.out.println(">> Turno cerrado exitosamente. Sistema apagado.");
+                    confirmacion = true;
+                    while (opcion != 3);
+                    sc.close();
             
+                        
+                    }
+                }
+                    
+                }
+            }
         }
         
     }
